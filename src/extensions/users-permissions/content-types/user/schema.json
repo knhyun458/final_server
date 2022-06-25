@@ -63,28 +63,22 @@
       "inversedBy": "users",
       "configurable": false
     },
+    "ratings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rating.rating",
+      "mappedBy": "user"
+    },
     "rooms": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::room.room",
-      "mappedBy": "users_permissions_users"
+      "mappedBy": "user"
     },
     "comments": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::comment.comment",
-      "mappedBy": "users_permissions_user"
-    },
-    "messages": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::message.message",
-      "mappedBy": "users_permissions_user"
-    },
-    "ratings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::rating.rating",
       "mappedBy": "user"
     }
   }

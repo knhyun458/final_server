@@ -15,12 +15,6 @@
     "tagName": {
       "type": "string",
       "required": true
-    },
-    "books": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::book.book",
-      "mappedBy": "tags"
     }
   }
 }

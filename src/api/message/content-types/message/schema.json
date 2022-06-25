@@ -12,14 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "messageContent": {
+    "content": {
       "type": "text"
-    },
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "messages"
     },
     "room": {
       "type": "relation",
@@ -27,8 +21,11 @@
       "target": "api::room.room",
       "inversedBy": "messages"
     },
-    "messageImage": {
+    "image": {
       "type": "text"
+    },
+    "username": {
+      "type": "string"
     }
   }
 }

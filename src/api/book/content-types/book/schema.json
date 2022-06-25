@@ -28,27 +28,21 @@
     "bookDescription": {
       "type": "richtext"
     },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "books"
-    },
     "comments": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "book"
     },
-    "ratings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::rating.rating",
-      "mappedBy": "book"
-    },
     "bookWriter": {
       "type": "string",
       "required": true
+    },
+    "tags": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "text"
     }
   }
 }
